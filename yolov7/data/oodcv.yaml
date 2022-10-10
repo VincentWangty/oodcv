@@ -1,0 +1,19 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# download command/URL (optional)
+#download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+# train: ../data/ROBINv1.1/COCO_jpgjpeg/trainval.txt  # 118287 images
+# val: ../data/ROBINv1.1/COCO_jpgjpeg/test.txt  # 5000 images
+# test: ../data/ROBINv1.1/COCO_jpgjpeg/test.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+train: ../data/ROBINv1.1/COCO_pesudo/trainval.txt  # 118287 images
+val: ../data/ROBINv1.1/COCO_pesudo/test.txt  # 5000 images
+test: ../data/ROBINv1.1/COCO_pesudo/test.txt
+
+# number of classes
+nc: 10
+
+# class names
+names: ['aeroplane', 'bicycle', 'boat', 'bus', 'car', 'chair', 'diningtable', 'motorbike', 'sofa', 'train']
